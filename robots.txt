@@ -1,2 +1,6 @@
+# Crawling is deliberately allowed so that the <meta name="robots" content="noindex">
+# on every page is actually READ and obeyed. Blocking with Disallow would stop the
+# crawler fetching the page, which stops it seeing the noindex, which is how private
+# pages end up listed as bare URLs. Allow + noindex is the combination that removes.
 User-agent: *
-Disallow: /
+Allow: /
